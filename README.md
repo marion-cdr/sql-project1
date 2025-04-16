@@ -21,13 +21,26 @@ This is a beginner data analysis project using **SQLite**. It simulates wallet t
 2. Create a new database and run the `project1.sql` file.
 3. Explore the queries and results!
 
-## 🧠 Exercises Included
 
-- Monthly balances per wallet
-- Total credited per wallet
-- Identifying and deleting duplicates
-- Cumulative balance over time
-- Trigger to prevent negative balance
+## 📌 Exercises
+
+1. **Analyze monthly transactions:**  
+   For each wallet and month (`YYYY-MM`), calculate:
+   - Total credited (`total_credited`)
+   - Total debited (`total_debited`)
+   - Monthly balance (`credit - debit`)
+
+2. **Top 3 credited wallets:**  
+   Return the 2 wallets with the highest total credited amounts.
+
+3. **Detect duplicate transactions:**  
+   Find duplicate rows based on the same `wallet_id`, `ledger_type`, `amount`, and `transaction_date`.
+
+4. **Calculate running balance:**  
+   Show the cumulative balance over time for each wallet using window functions.
+
+5. **Trigger to prevent overdraft:**  
+   Create a trigger that blocks debit transactions if the resulting balance would be negative.
 
 ---
 
